@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bootstrap Website</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+</head>
+<body id="top">
+  <nav class="navbar navbar-expand-lg sticky-top shadow-sm bg-white">
+  <div class="container-fluid">
+    <a href="#" class="navbar-brand d-flex align-items-center gap-2 logo-brand">
+      <img src="./images/oak.jpg" alt="Oak Academy Logo" class="navbar-logo" />
+      <span class="fw-bold text-dark">Oak <span class="text-secondary">Academy</span></span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto text-uppercase fw-semibold gap-lg-4 text-end text-lg-start">
+        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#instructors">Instructors</a></li>
+        <li class="nav-item"><a class="nav-link" href="#students">Students</a></li>
+        <li class="nav-item"><a class="nav-link" href="#questions">Questions</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="./images/student.jpeg" class="d-block w-100 img-fluid hero-img" alt="Student Image">
+     <div class="carousel-caption d-block text-center">
+        <div class="hero-overlay p-4 rounded">
+          <h5 class="hero-heading">Education</h5>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+          <div class="d-flex justify-content-center gap-3 mt-2">
+            <button class="btn btn-danger px-4">Start</button>
+            <button class="btn btn-warning px-4">Register</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="./images/student3.webp" class="d-block w-100 img-fluid hero-img" alt="Career">
+      <div class="carousel-caption d-block text-center">
+        <div class="hero-overlay p-4 rounded">
+          <h5 class="hero-heading">Dream Job</h5>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+          <div class="d-flex justify-content-center gap-3 mt-2">
+            <button class="btn btn-danger px-4">Start</button>
+            <button class="btn btn-warning px-4">Register</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="./images/student1.jpeg" class="d-block w-100 img-fluid hero-img" alt="Career Prep">
+      <div class="carousel-caption d-block text-center">
+        <div class="hero-overlay p-4 rounded">
+          <h5 class="hero-heading">Career</h5>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+          <div class="d-flex justify-content-center gap-3 mt-2">
+            <button class="btn btn-danger px-4">Start</button>
+            <button class="btn btn-warning px-4">Register</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<a href="#about" class="scroll-down text-center d-block mt-3">
+  <i class="bi bi-chevron-double-down fs-2 text-danger"></i>
+</a>
+
+  <main class="text-center">
+    <section id="about" class="container my-5 p-4 bg-light">
+  <h1 class="display-6 text-danger mb-5" data-aos="fade-up">About Us</h1>
+  <div class="row justify-content-center g-4">
+    <div class="col-sm-12 col-md-6 col-lg-4">
+      <div class="about-card p-4 h-100 text-center shadow-sm" data-aos="zoom-in">
+        <i class="bi bi-globe-americas about-icon mb-3"></i>
+        <h4 class="fw-bold">Online Courses</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+    </div>
+    <div class="col-sm-12 col-md-6 col-lg-4">
+      <div class="about-card p-4 h-100 text-center shadow-sm" data-aos="zoom-in" data-aos-delay="100">
+        <i class="bi bi-headset about-icon mb-3"></i>
+        <h4 class="fw-bold">Full-Time Mentoring</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+    </div>
+    <div class="col-sm-12 col-md-6 col-lg-4">
+      <div class="about-card p-4 h-100 text-center shadow-sm" data-aos="zoom-in" data-aos-delay="200">
+        <i class="bi bi-book-half about-icon mb-3"></i>
+        <h4 class="fw-bold">Learn Yourself</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+    </div>
+  </div>
+    </section>
+
+    <section id="instructors" class="container my-5 p-4">
+  <h2 class="display-6 text-danger fw-semibold text-center mb-5" data-aos="fade-up">Instructors</h2>
+  <div class="row g-4 justify-content-center">
+    
+    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2" data-aos="fade-up" data-aos-delay="0">
+      <div class="instructor-card text-center p-3 shadow-sm">
+        <img src="./images/teacher.webp" alt="Josh Ren" class="img-fluid rounded-circle mb-3 instructor-img">
+        <h5 class="fw-bold">Josh Ren</h5>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <div class="social-icons d-flex justify-content-center gap-3">
+          <i class="bi bi-facebook text-info"></i>
+          <i class="bi bi-instagram text-danger"></i>
+          <i class="bi bi-whatsapp text-success"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2" data-aos="fade-up" data-aos-delay="100">
+      <div class="instructor-card text-center p-3 shadow-sm">
+        <img src="./images/teacher.webp" alt="Bob Ken" class="img-fluid rounded-circle mb-3 instructor-img">
+        <h5 class="fw-bold">Bob Ken</h5>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <div class="social-icons d-flex justify-content-center gap-3">
+          <i class="bi bi-facebook text-info"></i>
+          <i class="bi bi-instagram text-danger"></i>
+          <i class="bi bi-whatsapp text-success"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2" data-aos="fade-up" data-aos-delay="200">
+      <div class="instructor-card text-center p-3 shadow-sm">
+        <img src="./images/teacher2.jpg" alt="Miss Rosy" class="img-fluid rounded-circle mb-3 instructor-img">
+        <h5 class="fw-bold">Miss Rosy</h5>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <div class="social-icons d-flex justify-content-center gap-3">
+          <i class="bi bi-facebook text-info"></i>
+          <i class="bi bi-instagram text-danger"></i>
+          <i class="bi bi-whatsapp text-success"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2" data-aos="fade-up" data-aos-delay="300">
+      <div class="instructor-card text-center p-3 shadow-sm">
+        <img src="./images/teacher3.jpg" alt="David Luther" class="img-fluid rounded-circle mb-3 instructor-img">
+        <h5 class="fw-bold">David Luther</h5>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <div class="social-icons d-flex justify-content-center gap-3">
+          <i class="bi bi-facebook text-info"></i>
+          <i class="bi bi-instagram text-danger"></i>
+          <i class="bi bi-whatsapp text-success"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2" data-aos="fade-up" data-aos-delay="400">
+      <div class="instructor-card text-center p-3 shadow-sm">
+        <img src="./images/teacher4.jpeg" alt="Marina Desusa" class="img-fluid rounded-circle mb-3 instructor-img">
+        <h5 class="fw-bold">Marina Desusa</h5>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <div class="social-icons d-flex justify-content-center gap-3">
+          <i class="bi bi-facebook text-info"></i>
+          <i class="bi bi-instagram text-danger"></i>
+          <i class="bi bi-whatsapp text-success"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2" data-aos="fade-up" data-aos-delay="500">
+      <div class="instructor-card text-center p-3 shadow-sm">
+        <img src="./images/teacher4.jpeg" alt="Miss Sophie" class="img-fluid rounded-circle mb-3 instructor-img">
+        <h5 class="fw-bold">Miss Sophie</h5>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <div class="social-icons d-flex justify-content-center gap-3">
+          <i class="bi bi-facebook text-info"></i>
+          <i class="bi bi-instagram text-danger"></i>
+          <i class="bi bi-whatsapp text-success"></i>
+        </div>
+      </div>
+    </div>
+
+  </div>
+    </section>
+
+    <section id="students" class="container my-5 p-4 bg-light rounded">
+  <div class="row align-items-center g-4 flex-md-row-reverse">
+    <div class="col-md-6" data-aos="fade-left">
+      <img src="./images/teacher1.jpg" alt="Student" class="img-fluid rounded shadow student-img" />
+    </div>
+    <div class="col-md-6 text-center text-md-start" data-aos="fade-right">
+      <h2 class="display-6 text-danger mb-4 fw-bold">Our Students</h2>
+      <p class="mb-4">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt obcaecati, aut
+        reiciendis beatae saepe quas, rem veritatis ea officiis eligendi dolore aliquam laborum
+        pariatur facere aperiam debitis officia nihil quos?
+      </p>
+      <a href="#" class="btn btn-danger px-4 py-2">Learn more</a>
+    </div>
+  </div>
+    </section>
+
+    <section id="questions" class="container my-5 p-4 bg-light rounded">
+  <div class="row align-items-center g-4">
+    <!-- Left: FAQ -->
+    <div class="col-md-6" data-aos="fade-right">
+      <h2 class="display-6 text-danger fw-bold mb-4 text-md-start text-center">Frequently Asked Questions</h2>
+      <div class="accordion accordion-flush" id="faqAccordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+              What courses do you offer?
+            </button>
+          </h2>
+          <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              We offer online programs in technology, design, marketing, and business led by industry experts.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+              Is there lifetime access?
+            </button>
+          </h2>
+          <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Yes, once enrolled, you get lifetime access to all learning materials.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+              Do I get a certificate?
+            </button>
+          </h2>
+          <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Yes, you receive a certificate upon successful course completion.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right: Image -->
+    <div class="col-md-6 text-center" data-aos="fade-left">
+      <img src="./images/oak1.jpg" alt="Oak Academy" class="img-fluid rounded shadow faq-img" />
+    </div>
+  </div>
+</section>
+
+    
+    <section id="contact" class="container py-5">
+  <div class="text-center mb-4">
+    <h2 class="text-danger fw-bold">Contact</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+  </div>
+
+  <!-- Contact Info -->
+  <div class="row text-center mb-4 g-4">
+    <div class="col-md-4" data-aos="fade-up">
+      <i class="fas fa-phone fa-2x text-danger mb-2"></i>
+      <h5 class="fw-bold">Telephone</h5>
+      <a href="tel:9876355354" class="text-decoration-none">9876355354</a>
+    </div>
+    <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+      <i class="fab fa-whatsapp fa-2x text-success mb-2"></i>
+      <h5 class="fw-bold">WhatsApp</h5>
+      <a href="https://wa.me/9876355354" target="_blank" class="text-decoration-none">9876355354</a>
+    </div>
+    <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+      <i class="fas fa-envelope fa-2x text-danger mb-2"></i>
+      <h5 class="fw-bold">Email</h5>
+      <a href="mailto:info@gmail.com" class="text-decoration-none">info@gmail.com</a>
+    </div>
+  </div>
+
+  <!-- Contact Form -->
+  <form>
+    <div class="row g-3">
+      <div class="col-md-6">
+        <input type="text" class="form-control" placeholder="Enter your Name" required>
+      </div>
+      <div class="col-md-6">
+        <input type="email" class="form-control" placeholder="Enter your Email" required>
+      </div>
+      <div class="col-12">
+        <input type="text" class="form-control" placeholder="Enter your Subject" required>
+      </div>
+      <div class="col-12">
+        <textarea class="form-control" rows="4" placeholder="Enter your Address or Message"></textarea>
+      </div>
+    </div>
+    <div class="text-center mt-4">
+      <button type="submit" class="btn btn-danger px-4 py-2">Submit</button>
+    </div>
+  </form>
+</section>
+
+  </main>
+
+  <footer class="bg-dark text-center text-white p-4">
+    <article>
+      <a href="#"><i class="bi bi-facebook text-info"></i></a>
+      <a href="#"><i class="bi bi-linkedin"></i></a>
+      <a href="#"><i class="bi bi-youtube text-danger"></i></a>
+      <a href="#"><i class="bi bi-instagram text-danger"></i></a>
+    </article>
+    <article class="p-3">&copy; <script>document.write(new Date().getFullYear());</script> Copyright by Oak Academy</article>
+  </footer>
+
+  <a href="#top" class="up-btn"><i class="bi bi-arrow-up"></i></a>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+</body>
+</html>

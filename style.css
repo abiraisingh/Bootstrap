@@ -1,0 +1,286 @@
+:root {
+  --red: #dc3545;
+}
+
+.navbar {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.nav-link {
+  color: black;
+  transition: all 0.5s;
+}
+
+.nav-link:hover {
+  color: var(--red);
+}
+
+.navbar img {
+  width: 100px;
+  height: 60px;
+  border-radius: 60%;
+}
+
+.logo-brand:hover .navbar-logo {
+  transform: rotate(10deg) scale(1.1);
+}
+
+.nav-link {
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: 0;
+  bottom: -5px;
+  background-color: var(--red);
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover {
+  color: var(--red);
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.nav-link.active {
+  color: var(--red);
+}
+
+
+.carousel-item h5 {
+  color: var(--red);
+  font-size: 2.5rem;
+  text-shadow: 2px 2px 2px black;
+}
+
+.carousel-item p {
+  text-shadow: 2px 2px 2px black;
+  font-weight: 600;
+}
+
+.carousel-item .btn {
+  width: 6rem;
+  margin-bottom: 1rem;
+}
+
+.carousel-item {
+  max-height: calc(100vh - 88px);
+}
+
+.hero-img {
+  object-fit: cover;
+  height: 100vh;
+}
+
+.carousel-caption {
+  bottom: 20%;
+}
+
+.hero-overlay {
+  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent */
+  color: white;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.hero-heading {
+  color: var(--red);
+  font-size: 3rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px black;
+}
+
+.carousel-inner {
+  transition: opacity 0.8s ease-in-out;
+}
+
+.scroll-down i {
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-heading {
+    font-size: 1.8rem;
+  }
+
+  .hero-overlay p {
+    font-size: 0.9rem;
+  }
+
+  .carousel-caption {
+    bottom: 15%;
+    padding: 0 1rem;
+  }
+}
+
+.student-img {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 12px;
+}
+
+.student-img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 576px) {
+  #students h2 {
+    font-size: 1.8rem;
+  }
+
+  #students p {
+    font-size: 0.95rem;
+  }
+
+  #students .btn {
+    width: 100%;
+  }
+}
+
+.accordion-button {
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: var(--red);
+  color: white;
+}
+
+.accordion-button::after {
+  filter: invert(1); /* White arrow when active */
+}
+
+.faq-img {
+  max-height: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 12px;
+}
+
+.faq-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 768px) {
+  #questions h2 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .accordion-button {
+    font-size: 0.95rem;
+  }
+}
+
+#contact input:focus,
+#contact textarea:focus {
+  border-color: var(--red);
+  box-shadow: 0 0 0 0.2rem rgba(255, 0, 0, 0.25);
+}
+
+#contact .btn-danger:hover {
+  background-color: #c82333;
+  border-color: #bd2130;
+}
+
+#contact i {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+
+.bi {
+  font-size: 2rem;
+}
+
+footer i {
+  font-size: 2rem;
+  color: white;
+  margin: 0.5rem;
+}
+
+.up-btn {
+  color: white;
+  background-color: var(--red);
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.about-card {
+  background: white;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+.about-icon {
+  font-size: 3rem;
+  color: var(--red);
+  transition: transform 0.3s ease;
+}
+
+.about-card:hover .about-icon {
+  transform: scale(1.2);
+}
+
+.instructor-card {
+  background-color: #fff;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.instructor-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.instructor-img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.instructor-card:hover .instructor-img {
+  transform: scale(1.1);
+}
+
+.social-icons i {
+  font-size: 1.6rem;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.social-icons i:hover {
+  transform: scale(1.3);
+}
