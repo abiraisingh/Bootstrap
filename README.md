@@ -1,27 +1,46 @@
-# 🌐 Bootstrap Demo Website
+# 🌐 Bootstrap Responsive Website
 
-This repository contains the source code for my Bootstrap-based demo website, hosted at:  
-👉 **https://abiraisingh.github.io/Bootstrap/**
-
-The project showcases a simple, clean, and responsive webpage built using **HTML5** and **Bootstrap 5**. It serves as a basic template that can be expanded into a larger website or portfolio.
+A fully responsive website built using **HTML**, **CSS**, and **Bootstrap 5**.  
+This project demonstrates how Bootstrap can be used to quickly design modern, clean, and mobile-friendly webpages.
 
 ---
 
-## 📌 Features
+## 📌 Project Description
 
-- ⭐ Fully responsive layout using **Bootstrap 5**
-- 🧾 Clean heading & paragraph section
-- 📋 Styled Bootstrap table (`table-info`)
-- 🎯 Simple and lightweight structure
-- 🏗️ Easy to extend and customize
+This is a simple frontend website showcasing the use of Bootstrap components such as navigation bars, cards, grids, buttons, and forms.  
+The site is structured to be responsive across all screen sizes using Bootstrap’s grid system.
+
+The goal of this project:
+- Practice Bootstrap layout and components  
+- Build a clean and simple UI  
+- Learn responsive design  
+- Deploy website using GitHub Pages  
+
+👉 **Live Website:**  
+https://abiraisingh.github.io/Bootstrap/
+
+---
+
+## 🚀 Features
+
+- Fully responsive layout  
+- Modern Bootstrap UI  
+- Navigation Bar  
+- Hero / Banner Section  
+- Services / Features Section  
+- Image Gallery  
+- Contact Form  
+- Footer Section  
+- Easy to customize  
 
 ---
 
 ## 🛠️ Technologies Used
 
-- **HTML5**
-- **Bootstrap 5.3.3 (via CDN)**
-- **JavaScript (Bootstrap bundle)**
+- HTML5  
+- CSS3  
+- Bootstrap 5  
+- GitHub Pages  
 
 ---
 
@@ -48,9 +67,11 @@ It is simple, clean, and perfect for practicing layout design.
 
 ---
 
-## 🚀 How to Run Locally
-
-1. Clone the repository:
+## 🔧 How to Run Locally
 
 ```bash
-git clone https://github.com/abiraisingh/Bootstrap.git
+git clone https://github.com/your-username/Bootstrap
+cd Bootstrap
+
+---
+
